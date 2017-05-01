@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图片居中</title>
+	<style>
+		.inputfile{
+			width:287px;
+			height: 115px;
+			border: 1px solid #000;
+			margin: 0 auto;
+			position:relative;
+		}
+
+		.inputfile .alert-pic{
+			position:absolute;
+		}
+		.inputfile .ipt{
+			opacity:0;
+			width:287px;
+			height:115px;
+		}
+		 .myimg{
+			width:400px;
+			height: 400px;
+			border: 1px solid #000;
+			position:relative;
+			margin:0 auto;
+			margin-top:40px;
+		}
+		.myimg>img{
+		}
+	</style>
+	<script src="jquery-1.10.1.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	 <div class="inputfile">
+	 <!-- 图片预览 -->
+        <img class="alert-pic" src="picpreview.png" alt="">
+        <input class="ipt" type="file" class="chooseButton" accept="image/jpeg,image/jpg,image/png">
+     </div>
+     <!-- 盛放上传的图片 -->
+     <div id="pic" class="myimg"><img id="preview" src=""></div>
+</body>
+</html>
